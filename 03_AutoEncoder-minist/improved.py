@@ -136,8 +136,8 @@ def main():
     print(f"\nFinal test BCE: {final_test_bce:.6f}")
     print(f"Final test MSE: {final_test_mse:.6f}")
 
-    torch.save(model.state_dict(), "improved_model.pt")
-    print("Model saved to improved_model.pt")
+    torch.save(model.state_dict(), "models/improved_model.pt")
+    print("Model saved to models/improved_model.pt")
 
     # --- Plot ---
     plt.figure(figsize=(10, 4))
@@ -161,7 +161,7 @@ def main():
     plt.title("Generated from Latent Grid")
 
     plt.tight_layout()
-    plt.savefig("improved_result.png", dpi=100)
+    plt.savefig("results/improved_result.png", dpi=100)
     plt.close()
 
     return {"train_losses": train_losses, "val_losses": val_losses, "final_test_bce": final_test_bce, "final_test_mse": final_test_mse}

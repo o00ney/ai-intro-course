@@ -63,8 +63,8 @@ def main():
     x_flat, x_cnn = load_data()
 
     # Load trained weights
-    baseline_ckpt = torch.load("baseline_model.pt", map_location=DEVICE, weights_only=True)
-    improved_ckpt = torch.load("improved_model.pt", map_location=DEVICE, weights_only=True)
+    baseline_ckpt = torch.load("models/baseline_model.pt", map_location=DEVICE, weights_only=True)
+    improved_ckpt = torch.load("models/improved_model.pt", map_location=DEVICE, weights_only=True)
 
     mlp = MLP_AutoEncoder().to(DEVICE)
     mlp.load_state_dict(baseline_ckpt)
@@ -99,7 +99,7 @@ def main():
     print(f"Optimized MSE ({cnn_mse:.6f}) < Baseline MSE ({mlp_mse:.6f}): {'PASS' if cnn_mse < mlp_mse else 'FAIL'}")
 
     # Save comparison data
-    np.savez("comparison.npz",
+    np.savez("models/comparison.npz",
              baseline_mse=mlp_mse, improved_mse=cnn_mse,
              baseline_bce=mlp_bce, improved_bce=cnn_bce,
              mse_improvement_pct=mse_improve)

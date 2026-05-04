@@ -99,8 +99,8 @@ def main():
 
     print(f"\nFinal test MSE: {final_loss:.6f}")
 
-    torch.save(model.state_dict(), "baseline_model.pt")
-    print("Model saved to baseline_model.pt")
+    torch.save(model.state_dict(), "models/baseline_model.pt")
+    print("Model saved to models/baseline_model.pt")
 
     # --- Plot ---
     plt.figure(figsize=(10, 4))
@@ -122,7 +122,7 @@ def main():
     plt.title("Generated from Latent Grid")
 
     plt.tight_layout()
-    plt.savefig("baseline_result.png", dpi=100)
+    plt.savefig("results/baseline_result.png", dpi=100)
     plt.close()
 
     return {"train_losses": losses, "final_test_mse": final_loss}
