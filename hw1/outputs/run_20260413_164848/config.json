@@ -1,0 +1,37 @@
+{
+  "seed": 42,
+  "epochs": 120,
+  "batch_size": 64,
+  "val_ratio": 0.1,
+  "learning_rate": 0.0005,
+  "min_learning_rate": 1e-05,
+  "clipnorm": 1.0,
+  "l2_weight": 0.0001,
+  "use_augmentation": true,
+  "cutout_mask_size": [
+    4,
+    4
+  ],
+  "cutout_probability": 0.0,
+  "dense_dropout": 0.3,
+  "lr_patience": 4,
+  "early_stop_patience": 15,
+  "early_stop_min_delta": 0.0001,
+  "train_samples_per_class": null,
+  "train_size": 45000,
+  "val_size": 5000,
+  "test_size": 10000,
+  "class_names": [
+    "airplane",
+    "automobile",
+    "bird",
+    "cat",
+    "deer",
+    "dog",
+    "frog",
+    "horse",
+    "ship",
+    "truck"
+  ],
+  "run_dir": "/Users/zhaomingxu/Developer/xmu_AI_homework/outputs/run_20260413_164848"
+}

@@ -1,0 +1,25 @@
+{
+  "config": {
+    "epochs": 50,
+    "batch_size": 128,
+    "sample_interval": 1,
+    "output_dir": "gan_mnist_wgan_gp",
+    "results_dir": "gan_results_wgan_gp",
+    "seed": 42,
+    "g_learning_rate": 0.0001,
+    "c_learning_rate": 0.0001,
+    "beta_1": 0.0,
+    "beta_2": 0.9,
+    "n_critic": 5,
+    "gp_weight": 10.0
+  },
+  "epochs_trained": 50,
+  "final_metrics": {
+    "epoch": 50,
+    "critic_loss": -0.6964409351348877,
+    "generator_loss": 1.1274988651275635,
+    "real_score": -0.3544638156890869,
+    "fake_score": -1.1091185808181763
+  },
+  "best_generator_loss_epoch": 6
+}

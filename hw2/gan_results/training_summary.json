@@ -1,0 +1,24 @@
+{
+  "config": {
+    "epochs": 50,
+    "batch_size": 128,
+    "sample_interval": 2,
+    "output_dir": "gan_mnist",
+    "results_dir": "gan_results",
+    "seed": 42,
+    "d_learning_rate": 0.0002,
+    "g_learning_rate": 0.0002,
+    "beta_1": 0.5,
+    "real_label": 0.9
+  },
+  "epochs_trained": 50,
+  "final_metrics": {
+    "epoch": 50,
+    "d_loss": 1.3710130453109741,
+    "g_loss": 0.8078969717025757,
+    "real_score": 0.45305341482162476,
+    "fake_score": 0.44724032282829285
+  },
+  "best_g_loss_epoch": 1,
+  "best_d_loss_epoch": 9
+}

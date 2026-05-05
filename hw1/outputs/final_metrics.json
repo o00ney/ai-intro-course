@@ -1,0 +1,15 @@
+{
+  "train_loss": 0.7248511910438538,
+  "train_accuracy": 0.7762888669967651,
+  "val_loss": 0.7618719339370728,
+  "val_accuracy": 0.7639999985694885,
+  "test_loss": 0.7809956669807434,
+  "test_accuracy": 0.7595000267028809,
+  "best_val_accuracy": 0.7645999789237976,
+  "best_val_loss": 0.7618719339370728,
+  "best_epoch_by_val_accuracy": 91,
+  "epochs_ran": 103,
+  "run_dir": "/Users/zhaomingxu/Developer/xmu_AI_homework/outputs/run_20260413_164848",
+  "best_model_path": "/Users/zhaomingxu/Developer/xmu_AI_homework/outputs/run_20260413_164848/cifar10_best.keras",
+  "last_model_path": "/Users/zhaomingxu/Developer/xmu_AI_homework/outputs/run_20260413_164848/cifar10_last.keras"
+}
