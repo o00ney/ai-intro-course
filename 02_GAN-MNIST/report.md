@@ -124,6 +124,22 @@ MNIST 数据集包含 `60000` 张训练图像和 `10000` 张测试图像，每�
 - 在 epoch 10 时，已经能够观察到较明显的数字轮廓；
 - 到 epoch 50 时，大部分样本已形成可辨识的手写数字，但边缘仍较模糊，个别样本存在笔画断裂与形状失真。
 
+**Vanilla GAN 训练曲线与生成样本：**
+
+![GAN训练曲线](results/training_curves.png)
+
+![GAN epoch 0](results/gan/epoch_000.png)
+![GAN epoch 10](results/gan/epoch_010.png)
+![GAN epoch 50](results/gan/epoch_050.png)
+
+**WGAN-GP 训练曲线与生成样本：**
+
+![WGAN-GP训练曲线](results/wgan_gp_curves.png)
+
+![WGAN-GP epoch 0](results/wgan_gp/epoch_000.png)
+![WGAN-GP epoch 25](results/wgan_gp/epoch_025.png)
+![WGAN-GP epoch 50](results/wgan_gp/epoch_050.png)
+
 ## 八、成果分析与结论
 
 从本次实验结果可以看出，当前卷积式 GAN 已经能够在 MNIST 数据集上生成具有明显数字结构的图像。  
